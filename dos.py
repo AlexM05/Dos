@@ -17,3 +17,4 @@ def attack():
 while True:
 	thread = threading.Thread(target=attack)
 	thread.start()
+	print(thread)
