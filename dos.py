@@ -3,7 +3,7 @@ import socket
 import time
 
 print("Welcome ( ° ͜ʖ°)╭∩╮. You here to kick some kids offline?")
-time.sleep(3)
+time.sleep(2)
 
 target = input("Enter a IP: ")
 time.sleep(1)
