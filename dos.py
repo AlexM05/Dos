@@ -1,8 +1,16 @@
 import threading
 import socket
+import time
+
+print("Welcome ( ° ͜ʖ°)╭∩╮. You here to kick some kids offline?")
+time.sleep(3)
 
 target = input("Enter a IP: ")
+time.sleep(1)
+
 str_port = input("Enter port: ")
+time.sleep(1)
+_
 port = int(str_port)
 fake_ip = '10.10.192.1'
 
