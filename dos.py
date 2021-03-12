@@ -23,7 +23,7 @@ if Fl == 'y':
     WaitTime = input("Enter the delay between packets: ")
     x = WaitTime.isdecimal()
 
-    if x == True:
+    if x:
         WaitTime = int(WaitTime)
     else:
         WaitTime = float(WaitTime)
