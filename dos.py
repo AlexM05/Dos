@@ -14,7 +14,7 @@ WaitTime = input("Enter the delay between packets: ")
 
 x = WaitTime.isdecimal()
 
-if print(x) == True:
+if x == True:
     WaitTime = int(WaitTime)
 else:
     WaitTime = float(WaitTime)
@@ -36,4 +36,5 @@ while True:
     thread = threading.Thread(target=attack)
     thread.start()
     time.sleep(WaitTime)
+    
     print(thread)
